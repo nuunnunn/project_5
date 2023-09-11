@@ -14,7 +14,7 @@ function prev(){
     clearInterval(stop)
     //버튼 누르면 숫자 감소
     if(chNum == 1){
-        chNum = 15
+        chNum = 16
     }
     chNum--;
 
@@ -41,7 +41,7 @@ function prev(){
 //다음 가기 버튼
 function next(){
     //버튼 누르면 숫자 증가
-    if(chNum == 14){
+    if(chNum == 15){
         chNum = 0
     }
     chNum++;
