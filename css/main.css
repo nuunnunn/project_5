@@ -423,11 +423,11 @@ footer #footer_box2 > p:last-of-type {
   box-shadow: inset 0px -50px 100px #2f27a0;
 }
 #section1 .slide_banner .slide_2 {
-  background-image: url("../img/main/banner14.webp");
+  background-image: url("../img/main/banner19.webp");
   background-position: center;
 }
 #section1 .slide_banner .slide_2::before {
-  box-shadow: inset 0px -70px 60px #6e4486;
+  box-shadow: inset 0px -150px 100px #69628f;
 }
 #section1 .slide_banner .slide_3 {
   background-image: url("../img/main/banner7.webp");
@@ -458,11 +458,11 @@ footer #footer_box2 > p:last-of-type {
   box-shadow: inset 0px -75px 60px #000;
 }
 #section1 .slide_banner .slide_7 {
-  background-image: url("../img/main/banner6.webp");
+  background-image: url("../img/main/banner14.webp");
   background-position: center;
 }
 #section1 .slide_banner .slide_7::before {
-  box-shadow: inset 0px -70px 60px #292c5f;
+  box-shadow: inset 0px -70px 60px #6e4486;
 }
 #section1 .slide_banner .slide_8 {
   background-image: url("../img/main/banner2.webp");
@@ -486,11 +486,11 @@ footer #footer_box2 > p:last-of-type {
   box-shadow: inset 0px -70px 60px #c75716;
 }
 #section1 .slide_banner .slide_11 {
-  background-image: url("../img/main/banner16.webp");
+  background-image: url("../img/main/banner18.webp");
   background-position: center;
 }
 #section1 .slide_banner .slide_11::before {
-  box-shadow: inset 0px -70px 60px #2879c5;
+  box-shadow: inset 0px -70px 60px #814310;
 }
 #section1 .slide_banner .slide_12 {
   background-image: url("../img/main/banner11.webp");
@@ -577,8 +577,8 @@ footer #footer_box2 > p:last-of-type {
   overflow: hidden;
 }
 #section_2 .today_wrap .today_slide {
-  width: 100%;
-  height: 98%;
+  width: 99.8%;
+  height: 100%;
   display: flex;
   transition: 1s;
 }
@@ -593,7 +593,7 @@ footer #footer_box2 > p:last-of-type {
   width: 100%;
   height: 260px;
   display: inline-block;
-  box-shadow: 5px 5px 2px #eee;
+  box-shadow: 3px 3px 2px #eee;
 }
 #section_2 .today_wrap .today_slide .td_box a > img {
   width: 100%;
@@ -731,20 +731,19 @@ footer #footer_box2 > p:last-of-type {
 #section4 .pick_wrap .pick_box .pick_book .pick_clbox {
   width: 100%;
   height: 100px;
-  background: #4d726e;
+  background: #a7e9ee;
   border-radius: 5px;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 #section4 .pick_wrap .pick_box .pick_book .clbox2 {
-  background: #382604;
+  background: #db6e89;
 }
 #section4 .pick_wrap .pick_box .pick_book .clbox3 {
-  background: #3ab34e;
+  background: #362a6d;
 }
 #section4 .pick_wrap .pick_box .pick_book a {
-  background: #b6204d;
   width: 102px;
   height: 100%;
   position: absolute;
@@ -768,7 +767,7 @@ footer #footer_box2 > p:last-of-type {
 
 #section5 {
   width: 100%;
-  height: 520px;
+  height: 525px;
   position: relative;
 }
 #section5 > span {
@@ -832,68 +831,68 @@ footer #footer_box2 > p:last-of-type {
 }
 #section5 .best_box {
   width: 100%;
-  height: 420px;
+  height: 425px;
   opacity: 1;
   transition: 1s;
 }
 #section5 .best_box .all_wrap {
   width: 100%;
-  height: 420px;
+  height: 0px;
   overflow: hidden;
   opacity: 1;
   transition: 1s;
 }
 #section5 .best_box .kr_wrap {
   width: 100%;
-  height: 420px;
+  height: 0px;
   overflow: hidden;
   opacity: 0;
   transition: 1s;
 }
 #section5 .best_box .foreign_wrap {
   width: 100%;
-  height: 420px;
+  height: 0px;
   overflow: hidden;
   opacity: 0;
   transition: 1s;
 }
 #section5 .best_box .eBook_wrap {
   width: 100%;
-  height: 420px;
+  height: 0px;
   overflow: hidden;
   opacity: 0;
   transition: 1s;
 }
 #section5 .new_box {
   width: 100%;
-  height: 0%;
+  height: 425px;
   opacity: 0;
   transition: 1s;
 }
 #section5 .new_box .new_all {
   width: 100%;
-  height: 420px;
+  height: 0px;
   overflow: hidden;
   opacity: 1;
   transition: 1s;
 }
 #section5 .new_box .new_kr {
   width: 100%;
-  height: 420px;
+  height: 0px;
   overflow: hidden;
   opacity: 0;
   transition: 1s;
 }
 #section5 .new_box .new_foreign {
   width: 100%;
-  height: 420px;
+  height: 0px;
   overflow: hidden;
   opacity: 0;
   transition: 1s;
 }
 #section5 .new_box .new_eBook {
   width: 100%;
-  height: 420px;
+  height: 0px;
   overflow: hidden;
   opacity: 0;
   transition: 1s;
@@ -933,11 +932,12 @@ footer #footer_box2 > p:last-of-type {
   height: 100%;
 }
 #section5 .s5_slide .s5_box p:last-of-type {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 #section5 .s5_slide .s5_box h4 {
   font-weight: 500;
   color: #000;
+  font-size: 0.9rem;
 }
 
 #section6 {

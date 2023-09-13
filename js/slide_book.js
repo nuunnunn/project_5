@@ -89,7 +89,7 @@ now_prev.addEventListener('click', function () {
 
 const s5_prev = document.getElementsByClassName('s5_prev')[0];
 const s5_next = document.getElementsByClassName('s5_next')[0];
-const s5_slide = document.getElementsByClassName('s5_slide')[0];
+const s5_slide = document.querySelectorAll('.s5_slide');
 
 s5_next.addEventListener('click', function () {
     s5_prev.style.display = 'block';
@@ -102,7 +102,11 @@ s5_next.addEventListener('click', function () {
         })
     }
 
-    animate($('.s5_box'), s5_slide, s5_count, 1198);
+    s5_slide.forEach((slide)=>{
+        animate($('.s5_box'), slide, s5_count, 1198);
+    })
+
+    // animate($('.s5_box'), s5_slide, s5_count, 1198);
 });
 
 s5_prev.addEventListener('click', function () {
@@ -114,7 +118,11 @@ s5_prev.addEventListener('click', function () {
         })
     }       
 
-    animate($('.s5_box'), s5_slide, s5_count, 1198);
+    s5_slide.forEach((slide)=>{
+        animate($('.s5_box'), slide, s5_count, 1198);
+    })
+
+    // animate($('.s5_box'), s5_slide, s5_count, 1198);
 });
 
 
