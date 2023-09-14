@@ -23,13 +23,45 @@ const foreign_wrap = document.getElementsByClassName('foreign_wrap')[0];
 const eBook_wrap = document.getElementsByClassName('eBook_wrap')[0];
 const fade_wrap = document.querySelectorAll('.fade_wrap');
 
+if($('.best').css('color','rgb(204, 204, 204)')){
+    $('.all').click(function(){
+        $(this).css('color','#ccc').siblings().css('color','#111')
+    });
+
+    $('.kr').click(function(){
+        $(this).css('color','#ccc').siblings().css('color','#111')
+    });
+
+    $('.foreign').click(function(){
+        $(this).css('color','#ccc').siblings().css('color','#111')
+    });
+
+    $('.eBook').click(function(){
+        $(this).css('color','#ccc').siblings().css('color','#111')
+    });
+
+
+    $('.new').click(function(){
+        $(this).css('color','#ccc').siblings().css('color','#111');
+        $('.all').css('color','#ccc').siblings().css('color','#111');
+    });
+
+    $('.best').click(function(){
+        $(this).css('color','#ccc').siblings().css('color','#111');
+        $('.all').css('color','#ccc').siblings().css('color','#111');
+    });
+}
+
 
 
 function basic() {
+
     best_box.style.height = '425px';
     best_box.style.opacity = 1;
     all_wrap.style.height = '425px';
     all_wrap.style.opacity = 1;
+    best_button.style.color = '#ccc';
+    all.style.color = '#ccc';
 
     new_box.style.height = '0%';
     new_box.style.opacity = 0;
@@ -42,7 +74,7 @@ function basic() {
         fade_wrap.forEach((fade) => {
             console.log(fade)
             fade.style.opacity = 0;
-            fade.style.height = 0;
+            fade.style.height = 0;       
         });
 
         all_wrap.style.opacity = 1;
@@ -52,7 +84,7 @@ function basic() {
     kr.onclick = function () {
         fade_wrap.forEach((fade) => {
             fade.style.opacity = 0;
-            fade.style.height = 0;
+            fade.style.height = 0;           
         });
         best_button.onclick = function () {
             kr_wrap.style.opacity = 0;
@@ -100,7 +132,7 @@ function basic() {
 
 $(function () {
     basic();
-})
+});
 
 function best_fade() {
 

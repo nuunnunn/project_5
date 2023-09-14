@@ -127,30 +127,30 @@ s5_prev.addEventListener('click', function () {
 
 
 
-function next_s7(){
-    $('.s7_prev').css('opacity',0);
-    $('.s7_next').css('opacity',0);
+function next_s8(){
+    $('.s8_prev').css('opacity',0);
+    $('.s8_next').css('opacity',0);
 
-    $('.s7_wrap').stop().animate({marginLeft: '-100%'},1000,function(){
-        $('.s7_back').eq(0).appendTo('.s7_wrap');
-        $('.s7_wrap').css({marginLeft: '0%'});
-        $('.s7_prev').css('opacity',1);
-        $('.s7_next').css('opacity',1);
+    $('.s8_wrap').stop().animate({marginLeft: '-100%'},1000,function(){
+        $('.s8_back').eq(0).appendTo('.s8_wrap');
+        $('.s8_wrap').css({marginLeft: '0%'});
+        $('.s8_prev').css('opacity',1);
+        $('.s8_next').css('opacity',1);
     })
 }
 
-$('.s7_prev').click(function(){
-    $('.s7_prev').css('opacity',0);
-    $('.s7_next').css('opacity',0);
+$('.s8_prev').click(function(){
+    $('.s8_prev').css('opacity',0);
+    $('.s8_next').css('opacity',0);
 
-    $('.s7_back:last').prependTo('.s7_wrap');
-    $('.s7_wrap').css({marginLeft: '-100%'});
-    $('.s7_wrap').animate({marginLeft: 0},1000,function(){
-        $('.s7_prev').css('opacity',1);
-        $('.s7_next').css('opacity',1);
+    $('.s8_back:last').prependTo('.s8_wrap');
+    $('.s8_wrap').css({marginLeft: '-100%'});
+    $('.s8_wrap').animate({marginLeft: 0},1000,function(){
+        $('.s8_prev').css('opacity',1);
+        $('.s8_next').css('opacity',1);
     });
 });
 
-$('.s7_next').click(function(){
-    next_s7();
+$('.s8_next').click(function(){
+    next_s8();
 })

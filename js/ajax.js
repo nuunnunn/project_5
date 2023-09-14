@@ -37,8 +37,8 @@ for (var j = 0; j < search.length; j++) {
 //section_3
 var search2 = ['세이노의 가르침', '해리 포터와 마법사의 돌', '양들의 침묵','H마트에서 울다',
 '파친코1', '비가 오면 열리는 상점','눈이 부신날', '역행자 확장판','지구 끝의 온실',
-'모든 삶은 흐른다','메리골드 마음 세탁소','불편한 편의점2','해가 지는 곳으로','하늘과 바람과 별과 인간',  '말리의 일곱개의 달',
-'참을 수 없는 존재의 가벼움', '별일은 없고요?',  '빛과 물질에 관한 이론'];
+'모든 삶은 흐른다','메리골드 마음 세탁소','불편한 편의점2','해가 지는 곳으로','하늘과 바람과 별과 인간',  
+'말리의 일곱개의 달', '참을 수 없는 존재의 가벼움', '별일은 없고요?',  '빛과 물질에 관한 이론'];
 
 for (var j = 0; j < search2.length; j++) {
     $.ajax({
@@ -92,8 +92,8 @@ for (var j = 0; j < search12.length; j++) {
 
 //best - all
 var search14 = ['도시와 그 불확실한 벽','노르웨이의 숲', '어서 오세요, 휴남동 서점입니다',
-'너의 목소리를 보여줘','체리새우 : 비밀글입니다','물고기는 존재하지 않는다','홍학의 자리', 
-'아버지의 해방일지', '밝은 밤','당신의 인생이 왜 힘들지 않아야 한다고 생각하십니까'];
+'테디베어는 죽지 않아','안드로메다의 고양이', '체리새우 : 비밀글입니다',
+'물고기는 존재하지 않는다','아버지의 해방일지', '밝은 밤','너의 목소리를 보여줘'];
 
 for (var j = 0; j < search14.length; j++) {
     $.ajax({
@@ -114,9 +114,9 @@ for (var j = 0; j < search14.length; j++) {
 
 
 //best - kr
-var search3 = ['도시와 그 불확실한 벽','아메리칸 프로메테우스','퓨처 셀프',
-'총, 균, 쇠', '아주 희미한 빛으로도', '홍학의 자리', '제노사이드','삼가 이와 같이 아뢰옵니다'
-,'당신의 인생이 왜 힘들지 않아야 한다고 생각하십니까','너의 목소리를 보여줘'];
+var search3 = ['도시와 그 불확실한 벽','테디베어는 죽지 않아','청년 주부 구운몽','안드로메다의 고양이',
+'너의 목소리를 보여줘', '아주 희미한 빛으로도', '홍학의 자리', '제노사이드',
+'삼가 이와 같이 아뢰옵니다','당신의 인생이 왜 힘들지 않아야 한다고 생각하십니까'];
 
 for (var j = 0; j < search3.length; j++) {
     $.ajax({
@@ -154,21 +154,8 @@ for (var j = 0; j < search4.length; j++) {
 }
 
 //best - eb
-var search5 = ['노르웨이의 숲', '어서 오세요, 휴남동 서점입니다','체리새우 : 비밀글입니다',
+var search5 = ['반은 미치고 반은 행복했으면','노르웨이의 숲', '어서 오세요, 휴남동 서점입니다','체리새우 : 비밀글입니다',
 '아버지의 해방일지','가짜 노동', '밝은 밤', '사랑의 기술', '이상한 그림', '불특정 다수'];
-
-$.ajax({
-    method: "GET",
-    url: "https://dapi.kakao.com/v3/search/book?target=title",
-    headers: { Authorization: "KakaoAK 0294a1ce618b1232d015ce6ca5aef7b7" },
-    data: { query: '구의 증명' },
-    async: false
-})
-    .done(function (data) {
-        $('.eBook_wrap').find('.s5_box').eq(0).children('a').append('<img src = "' + data.documents[1].thumbnail + '"/>');
-        $('.eBook_wrap').find('.s5_box').eq(0).children('h4').eq(0).text(data.documents[1].title);
-        $('.eBook_wrap').find('.s5_box').eq(0).children('p').eq(1).text(data.documents[1].authors);
-    });
 
 for (var j = 0; j < search5.length; j++) {
     $.ajax({
@@ -179,9 +166,9 @@ for (var j = 0; j < search5.length; j++) {
         async: false
     })
         .done(function (data) {
-            $('.eBook_wrap').find('.s5_box').eq(j+1).children('a').append('<img src = "' + data.documents[0].thumbnail + '"/>');
-            $('.eBook_wrap').find('.s5_box').eq(j+1).children('h4').eq(0).text(data.documents[0].title);
-            $('.eBook_wrap').find('.s5_box').eq(j+1).children('p').eq(1).text(data.documents[0].authors);
+            $('.eBook_wrap').find('.s5_box').eq(j).children('a').append('<img src = "' + data.documents[0].thumbnail + '"/>');
+            $('.eBook_wrap').find('.s5_box').eq(j).children('h4').eq(0).text(data.documents[0].title);
+            $('.eBook_wrap').find('.s5_box').eq(j).children('p').eq(1).text(data.documents[0].authors);
         });
 }
 
@@ -284,7 +271,7 @@ for (var j = 0; j < search9.length; j++) {
 
 
 
-//section6
+//section7
 var search10 = ['살롱 드 경성', '살아남은 그림들', '이중섭, 편지화', '박수근 : 봄을 기다리는 나목', '어디서 무엇이 되어 다시 만나랴', '이중섭, 그 사람'];
 
 for (var j = 0; j < search10.length; j++) {
@@ -305,7 +292,7 @@ for (var j = 0; j < search10.length; j++) {
 
 
 
-//section7
+//section8
 $.ajax({
     method: "GET",
     url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -314,7 +301,7 @@ $.ajax({
     async: false
 })
     .done(function (data) {
-        $('.s7_back').eq(0).find('.front_box a').append('<img src = "' + data.documents[1].thumbnail + '"/>');
+        $('.s8_back').eq(0).find('.front_box a').append('<img src = "' + data.documents[1].thumbnail + '"/>');
     });
 
 
@@ -328,6 +315,6 @@ for (var j = 0; j < search11.length; j++) {
         async: false
     })
         .done(function (data) {
-            $('.s7_back').eq(j+1).find('.front_box a').append('<img src = "' + data.documents[0].thumbnail + '"/>');
+            $('.s8_back').eq(j+1).find('.front_box a').append('<img src = "' + data.documents[0].thumbnail + '"/>');
         });
 }
