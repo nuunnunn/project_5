@@ -1,13 +1,3 @@
-//popup img
-let luckyDiv = document.getElementsByClassName('lucky')[0];
-let lucky = document.getElementsByClassName('lucky')[0].children[1];
-
-lucky.onclick = function () {
-    luckyDiv.style.display = 'none'
-}
-
-
-
 //section fade out
 const best_button = document.getElementsByClassName('best')[0];
 const best_box = document.getElementsByClassName('best_box')[0];

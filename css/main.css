@@ -34,7 +34,7 @@ a {
   color: #999;
   padding: 3px 7px;
   border-radius: 20px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .go_top:hover {
   padding: 5px 10px;
@@ -77,9 +77,8 @@ header nav .grcircle {
   color: #ccc;
 }
 header nav a {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.9rem;
-  transition: 0.5s;
 }
 header nav a:hover {
   color: #ccc;
@@ -101,6 +100,7 @@ header nav a:hover {
   background: #eee;
   border: none;
   border-radius: 10px;
+  margin-right: 30px;
   background-image: url(../img/main/search.png);
   background-size: 13px;
   background-repeat: no-repeat;
@@ -110,22 +110,25 @@ header nav a:hover {
   outline: none;
 }
 #menu .iconbox .icon_img {
-  width: 210px;
+  width: 180px;
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 #menu .iconbox .icon_img a {
-  width: 25px;
+  width: 27px;
 }
 #menu .iconbox .icon_img a img {
   width: 100%;
 }
 #menu .iconbox .icon_img a:nth-of-type(3) {
-  width: 23px;
+  width: 30px;
+}
+#menu .iconbox .icon_img a:nth-of-type(3) {
+  width: 25px;
 }
 #menu .iconbox .icon_img a:last-of-type {
-  width: 23px;
+  width: 26px;
 }
 
 footer {
@@ -151,7 +154,6 @@ footer #footer_box .left_ftbox a {
   margin-bottom: 20px;
   font-size: 0.8rem;
   font-weight: 600;
-  transition: 0.5s;
 }
 footer #footer_box .left_ftbox a:hover {
   color: #ccc;
@@ -181,9 +183,6 @@ footer #footer_box table td .hire::after {
   border-radius: 20px;
   margin-left: 2px;
 }
-footer #footer_box table td a {
-  transition: 0.5s;
-}
 footer #footer_box table td:hover a {
   color: #ccc;
 }
@@ -192,7 +191,6 @@ footer .sns_box a {
   padding: 15px 10px 5px;
   border-radius: 25px;
   margin-left: 10px;
-  transition: 0.5s;
 }
 footer .sns_box a:hover {
   background: rgb(245, 244, 244);
@@ -206,10 +204,9 @@ footer #footer_box2 h5 {
   font-size: 0.75rem;
   cursor: pointer;
   margin-bottom: 10px;
-  transition: 0.5s;
 }
 footer #footer_box2 h5:hover {
-  color: #aaa;
+  color: #ccc;
 }
 footer #footer_box2 h5 i {
   font-size: 0.6rem;
@@ -237,9 +234,6 @@ footer #footer_box2 .ft_visible {
 footer #footer_box2 .ft_visible p {
   line-height: 20px;
 }
-footer #footer_box2 .ft_visible p a {
-  transition: 0.5s;
-}
 footer #footer_box2 .ft_visible p:hover a {
   color: #aaa;
 }
@@ -249,30 +243,6 @@ footer #footer_box2 .ft_visible p:nth-of-type(3) a {
 }
 footer #footer_box2 > p:last-of-type {
   margin-top: 10px;
-}
-
-.lucky {
-  position: fixed;
-  bottom: -1%;
-  left: 25%;
-  z-index: 10;
-  width: 50%;
-  overflow: hidden;
-  border-radius: 20px;
-}
-.lucky img {
-  width: 100%;
-  height: 100%;
-}
-.lucky h3 {
-  position: fixed;
-  bottom: 30%;
-  right: 27%;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.lucky h3:hover {
-  color: #999;
 }
 
 #section1_txt {
@@ -335,7 +305,6 @@ footer #footer_box2 > p:last-of-type {
 #section1_txt .change_section h4 {
   margin-right: 15px;
   font-weight: 500;
-  transition: 0.5s;
 }
 #section1_txt .change_section h4:hover {
   color: #ccc;
@@ -347,7 +316,7 @@ footer #footer_box2 > p:last-of-type {
   border-radius: 25px;
 }
 #section1_txt .change_section .select:hover {
-  background: #2386d1;
+  background: #1e87ff;
   color: #fff;
 }
 
@@ -362,7 +331,7 @@ footer #footer_box2 > p:last-of-type {
   padding: 10px 17px;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #section1 .slide_button > span:hover {
   color: #ccc;
@@ -601,7 +570,7 @@ footer #footer_box2 > p:last-of-type {
   font-size: 0.8rem;
   color: #333;
   font-weight: 500;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 #section_2 {
@@ -620,7 +589,7 @@ footer #footer_box2 > p:last-of-type {
   padding: 10px 17px;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #section_2 > span:hover {
   color: #ccc;
@@ -650,7 +619,7 @@ footer #footer_box2 > p:last-of-type {
   margin-right: 9px;
   flex-shrink: 0;
 }
-#section_2 .today_wrap .today_slide .td_box:hover h4, #section_2 .today_wrap .today_slide .td_box:hover p {
+#section_2 .today_wrap .today_slide .td_box:hover h4 {
   color: #ccc;
 }
 #section_2 .today_wrap .today_slide .td_box a {
@@ -668,11 +637,11 @@ footer #footer_box2 > p:last-of-type {
   font-size: 0.9rem;
   font-weight: 500;
   color: #000;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #section_2 .today_wrap .today_slide .td_box p {
   font-size: 0.8rem;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 #section_3 {
@@ -691,7 +660,7 @@ footer #footer_box2 > p:last-of-type {
   padding: 10px 17px;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #section_3 > span:hover {
   color: #ccc;
@@ -728,7 +697,7 @@ footer #footer_box2 > p:last-of-type {
   align-items: center;
   margin-bottom: 6px;
 }
-#section_3 .now_wrap .now_slide .now_box .now_book:hover a {
+#section_3 .now_wrap .now_slide .now_box .now_book:hover a:first-of-type {
   color: #ccc;
 }
 #section_3 .now_wrap .now_slide .now_box .now_book a {
@@ -749,7 +718,7 @@ footer #footer_box2 > p:last-of-type {
   height: 100%;
   display: flex;
   justify-content: center;
-  transition: 0.5s;
+  transition: 0.2s;
   align-items: center;
 }
 #section_3 .now_wrap .now_slide .now_box .now_book > div {
@@ -760,7 +729,7 @@ footer #footer_box2 > p:last-of-type {
 }
 #section_3 .now_wrap .now_slide .now_box .now_book > div > a {
   width: 100%;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #section_3 .now_wrap .now_slide .now_box .now_book > div > a:first-of-type {
   font-weight: 500;
@@ -778,7 +747,7 @@ footer #footer_box2 > p:last-of-type {
   margin-right: 2px;
 }
 #section_3 .now_wrap .now_slide .now_box .now_book > div > p span i {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 #section4 {
@@ -854,7 +823,7 @@ footer #footer_box2 > p:last-of-type {
   padding: 10px 17px;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #section5 > span:hover {
   color: #ccc;
@@ -884,7 +853,7 @@ footer #footer_box2 > p:last-of-type {
 }
 #section5 .s5_txtwrap .s5_chtxt h2 {
   font-size: 1.7rem;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #section5 .s5_txtwrap .s5_chtxt h2:hover {
   color: #aaa;
@@ -903,7 +872,7 @@ footer #footer_box2 > p:last-of-type {
 }
 #section5 .s5_txtwrap .s5_category li {
   font-size: 0.9rem;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #section5 .s5_txtwrap .s5_category li:hover {
   color: #ccc;
@@ -987,7 +956,7 @@ footer #footer_box2 > p:last-of-type {
   margin-right: 29px;
   flex-shrink: 0;
 }
-#section5 .s5_slide .s5_box:hover h4, #section5 .s5_slide .s5_box:hover p {
+#section5 .s5_slide .s5_box:hover h4 {
   color: #ccc;
 }
 #section5 .s5_slide .s5_box p:first-of-type {
@@ -1015,13 +984,13 @@ footer #footer_box2 > p:last-of-type {
 }
 #section5 .s5_slide .s5_box p:last-of-type {
   font-size: 0.8rem;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #section5 .s5_slide .s5_box h4 {
   font-weight: 500;
   color: #000;
   font-size: 0.9rem;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 #section6 {
@@ -1045,6 +1014,7 @@ footer #footer_box2 > p:last-of-type {
   height: 435px;
   border-radius: 7px;
   overflow: hidden;
+  cursor: pointer;
   color: #fff;
   text-align: center;
   position: relative;
@@ -1089,6 +1059,15 @@ footer #footer_box2 > p:last-of-type {
   left: 0;
   font-size: 0.9em;
 }
+#section6 .s6_wrap .s6_box::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  height: 0;
+  background: #fff;
+}
 
 #section7 {
   width: 100%;
@@ -1130,7 +1109,7 @@ footer #footer_box2 > p:last-of-type {
   margin-right: 9px;
   flex-shrink: 0;
 }
-#section7 .art_wrap .art_slide .art_box:hover h4, #section7 .art_wrap .art_slide .art_box:hover p {
+#section7 .art_wrap .art_slide .art_box:hover h4 {
   color: #ccc;
 }
 #section7 .art_wrap .art_slide .art_box a {
@@ -1147,11 +1126,11 @@ footer #footer_box2 > p:last-of-type {
   font-weight: 500;
   color: #000;
   font-size: 0.9rem;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #section7 .art_wrap .art_slide .art_box p {
   font-size: 0.8rem;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 #section8 {
@@ -1168,7 +1147,7 @@ footer #footer_box2 > p:last-of-type {
   cursor: pointer;
   position: absolute;
   top: 45%;
-  transition: 1s;
+  transition: 0.2s;
 }
 #section8 > span:hover {
   border: 1px solid #aaa;
@@ -1178,7 +1157,7 @@ footer #footer_box2 > p:last-of-type {
 }
 #section8 > span i {
   color: #fff;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #section8 .s8_prev {
   left: 19.3%;
@@ -1219,7 +1198,7 @@ footer #footer_box2 > p:last-of-type {
 }
 #section8 .s8_wrap .s8_back .back_box .s8_box h5 {
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #section8 .s8_wrap .s8_back .back_box .s8_box h5:hover {
   color: #ccc;
@@ -1269,7 +1248,7 @@ footer #footer_box2 > p:last-of-type {
   width: 570px;
   height: 322px;
   background: rgba(0, 0, 0, 0.3);
-  transition: 0.5s;
+  transition: 0.2s;
   position: absolute;
   bottom: -33%;
   right: 20%;
