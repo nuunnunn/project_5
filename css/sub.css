@@ -405,10 +405,10 @@ footer #footer_box2 > p:last-of-type {
   border: none;
   background: #1e9eff;
   color: #fff;
-  font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   transition: 0.2s;
+  font-family: "IBM Plex Sans KR", sans-serif;
 }
 #full_box #left_box .book_title .book_price > div:last-of-type button:hover {
   background: #1e87ff;
@@ -445,6 +445,22 @@ footer #footer_box2 > p:last-of-type {
   width: 100%;
   background: rgb(27, 55, 116);
   margin-bottom: 10px;
+}
+#full_box #left_box .hide_txt {
+  cursor: pointer;
+  color: #1e9eff;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#full_box #left_box .hide_txt i {
+  color: #fff;
+  margin-left: 3px;
+  background: #1e9eff;
+  padding: 4px 5px 3px 4px;
+  border-radius: 10px;
+  font-size: 0.1rem;
 }
 #full_box #left_box .introduce {
   width: 100%;
@@ -547,6 +563,507 @@ footer #footer_box2 > p:last-of-type {
 }
 #full_box #left_box .book_review .hidden_box {
   display: none;
+}
+#full_box #left_box .profile {
+  width: 100%;
+  margin-bottom: 60px;
+}
+#full_box #left_box .profile h3:first-of-type {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 40px;
+  color: rgb(27, 55, 116);
+}
+#full_box #left_box .profile h3:last-of-type {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 60px;
+}
+#full_box #left_box .profile .line:not(:first-of-type) {
+  background: #eee;
+  height: 1px;
+  margin: 20px 0;
+}
+#full_box #left_box .profile button {
+  width: 170px;
+  height: 30px;
+  border-radius: 5px;
+  background: transparent;
+  color: #1e9eff;
+  border: 1px solid #1e9eff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 1px #1e9eff;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  margin-bottom: 10px;
+}
+#full_box #left_box .profile button i {
+  font-weight: 700;
+  margin-right: 5px;
+}
+#full_box #left_box .profile button:hover {
+  background: rgba(30, 158, 255, 0.1);
+}
+#full_box #left_box .profile button span {
+  font-size: 1.5rem;
+}
+#full_box #left_box .profile table {
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+#full_box #left_box .profile table th {
+  font-weight: 100;
+  width: 35px;
+  color: #999;
+  text-align: left;
+}
+#full_box #left_box .profile table td {
+  font-weight: 100;
+}
+#full_box #left_box .profile > div:first-of-type {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+#full_box #left_box .profile > div:first-of-type p {
+  font-size: 0.8rem;
+  color: #999;
+}
+#full_box #left_box .profile > div:first-of-type p span {
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-weight: 600;
+  box-shadow: 0px 1px 1px #ccc;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#full_box #left_box .profile > div:first-of-type p span:hover {
+  background: #f0f0f0;
+}
+#full_box #left_box .profile > div:first-of-type p span i {
+  margin-right: 3px;
+}
+#full_box #left_box .profile > div:nth-of-type(2) {
+  font-size: 0.85rem;
+  font-weight: 100;
+}
+#full_box #left_box .profile > div:nth-of-type(2) .visible_box {
+  display: block;
+  font-size: 0.8rem;
+  color: #333;
+  font-family: "Bricolage Grotesque", sans-serif;
+  line-height: 20px;
+}
+#full_box #left_box .profile > div:nth-of-type(2) .visible_box span {
+  font-size: 0.75rem;
+  color: #666;
+}
+#full_box #left_box .profile h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#full_box #left_box .profile > div:last-of-type {
+  width: 300px;
+  display: flex;
+}
+#full_box #left_box .profile > div:last-of-type .profile_book {
+  width: 100%;
+  height: 100%;
+}
+#full_box #left_box .profile > div:last-of-type .profile_book a {
+  border: 1px solid #ec6767;
+  width: 90px;
+  height: 135px;
+  display: inline-block;
+}
+#full_box #left_box .profile > div:last-of-type .profile_book p:first-of-type {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+#full_box #left_box .profile > div:last-of-type .profile_book p:nth-of-type(2) {
+  font-size: 0.6rem;
+  margin-bottom: 15px;
+  color: #777;
+}
+#full_box #left_box .profile > div:last-of-type .profile_book p:nth-of-type(2) span {
+  color: orangered;
+  font-size: 0.1rem;
+}
+#full_box #left_box .introduce_writer {
+  width: 100%;
+  margin-bottom: 60px;
+}
+#full_box #left_box .introduce_writer h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 40px;
+  color: rgb(27, 55, 116);
+}
+#full_box #left_box .introduce_writer p:last-of-type {
+  font-size: 0.8rem;
+  color: #333;
+  font-family: "Bricolage Grotesque", sans-serif;
+  line-height: 20px;
+}
+#full_box #left_box .list {
+  width: 100%;
+  margin-bottom: 60px;
+}
+#full_box #left_box .list h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 40px;
+  color: rgb(27, 55, 116);
+}
+#full_box #left_box .list > div {
+  width: 100%;
+}
+#full_box #left_box .list > div > p {
+  font-size: 0.8rem;
+  color: #333;
+  font-family: "Bricolage Grotesque", sans-serif;
+  line-height: 20px;
+}
+#full_box #left_box .list > div .visible_box {
+  display: block;
+}
+#full_box #left_box .list > div .hidden_box {
+  display: none;
+}
+#full_box #left_box .review {
+  width: 100%;
+  margin-bottom: 60px;
+}
+#full_box #left_box .review > h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 40px;
+  color: rgb(27, 55, 116);
+}
+#full_box #left_box .review .write_review {
+  width: 100%;
+  height: 305px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#full_box #left_box .review .write_review .rating {
+  width: 120px;
+  text-align: center;
+  padding-top: 15px;
+}
+#full_box #left_box .review .write_review .rating p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: lightslategrey;
+}
+#full_box #left_box .review .write_review .rating p:nth-of-type(2) {
+  margin-bottom: 7px;
+}
+#full_box #left_box .review .write_review .rating p:nth-of-type(2) i {
+  color: orangered;
+}
+#full_box #left_box .review .write_review .rating > div {
+  width: 100%;
+  margin-bottom: 3px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #8594a2;
+}
+#full_box #left_box .review .write_review .rating > div i {
+  font-size: 0.1rem;
+}
+#full_box #left_box .review .write_review .rating > div > div {
+  display: inline-block;
+  margin-left: 5px;
+  width: 75%;
+  box-shadow: inset 1px 1px 1px #adbfd1;
+  background: #eee;
+  height: 9px;
+}
+#full_box #left_box .review .write_review .rating > div > div > p {
+  width: 80%;
+  height: 100%;
+  background: #8594a2;
+  box-shadow: inset 1px 1px 3px #bccbda;
+}
+#full_box #left_box .review .write_review .rating > div > div .bar2 {
+  width: 20%;
+}
+#full_box #left_box .review .write_review .rating > div > div .bar3 {
+  width: 8%;
+}
+#full_box #left_box .review .write_review .rating > div > div .bar4 {
+  width: 0%;
+}
+#full_box #left_box .review .write_review .rating .line {
+  background: #eee;
+  height: 1px;
+  margin-top: 10px;
+}
+#full_box #left_box .review .write_review .write {
+  width: calc(100% - 140px);
+  text-align: center;
+}
+#full_box #left_box .review .write_review .write h3 {
+  color: #999;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#full_box #left_box .review .write_review .write p {
+  font-size: 2rem;
+  color: #f7f8fa;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+#full_box #left_box .review .write_review .write p i {
+  color: #eee;
+  font-size: 2.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#full_box #left_box .review .write_review .write textarea {
+  margin-bottom: 10px;
+}
+#full_box #left_box .review .write_review .write > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#full_box #left_box .review .write_review .write > div > button {
+  background: transparent;
+  border: 1px solid #bdc6cf;
+  color: #798692;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.2s;
+  box-shadow: 0px 1px 1px #bdc6cf;
+}
+#full_box #left_box .review .write_review .write > div > div label {
+  font-size: 0.85rem;
+  color: #535c66;
+  font-weight: 500;
+}
+#full_box #left_box .review .write_review .write > div > div button {
+  margin-left: 10px;
+  border: none;
+  background: #ccc;
+  color: #fff;
+  width: 95px;
+  height: 30px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+#full_box #left_box .review .review_category {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #798692;
+}
+#full_box #left_box .review .review_category .left_cate {
+  display: flex;
+  margin-bottom: 7px;
+}
+#full_box #left_box .review .review_category .left_cate h4:first-of-type {
+  color: #414850;
+}
+#full_box #left_box .review .review_category .left_cate h4:last-of-type {
+  color: #798692;
+  margin-left: 10px;
+}
+#full_box #left_box .review .review_category .left_cate h4:last-of-type small {
+  color: #b3bbc2;
+}
+#full_box #left_box .review .review_category .left_cate h4 {
+  font-weight: 500;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#full_box #left_box .review .review_category .left_cate h4:hover {
+  color: #414850;
+}
+#full_box #left_box .review .review_category .right_cate {
+  display: flex;
+}
+#full_box #left_box .review .review_category .right_cate h5 {
+  font-weight: 500;
+  margin-right: 5px;
+  color: #798692;
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+#full_box #left_box .review .review_category .right_cate h5:hover {
+  color: #414850;
+}
+#full_box #left_box .review .review_category .right_cate h5 span {
+  color: #dee3e7;
+}
+#full_box #left_box .review .review_category .right_cate h5:first-of-type {
+  color: #414850;
+}
+#full_box #left_box .review .review_category .line {
+  background: #eee;
+}
+#full_box #left_box .review .review_category .line p {
+  width: 63px;
+  background: #414850;
+  height: 100%;
+}
+#full_box #left_box .review .review_txtBox {
+  width: 100%;
+}
+#full_box #left_box .review .review_txtBox .review_txt {
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  margin: 0px 0 20px;
+}
+#full_box #left_box .review .review_txtBox .review_txt .star {
+  font-size: 0.7rem;
+}
+#full_box #left_box .review .review_txtBox .review_txt .star i {
+  color: orangered;
+  font-size: 0.1rem;
+}
+#full_box #left_box .review .review_txtBox .review_txt .star p {
+  margin: 0px 0 5px;
+}
+#full_box #left_box .review .review_txtBox .review_txt .star p:nth-of-type(2) {
+  color: #000;
+}
+#full_box #left_box .review .review_txtBox .review_txt .star p:nth-of-type(2)::after {
+  content: "구매자";
+  background: #8594a2;
+  color: #fff;
+  margin-left: 5px;
+  padding: 2px;
+  border-radius: 3px;
+  font-size: 0.6rem;
+}
+#full_box #left_box .review .review_txtBox .review_txt .star p:nth-of-type(3), #full_box #left_box .review .review_txtBox .review_txt .star p:last-of-type {
+  color: #646e79;
+  font-weight: 500;
+}
+#full_box #left_box .review .review_txtBox .review_txt .star p:last-of-type {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+#full_box #left_box .review .review_txtBox .review_txt .user_review {
+  padding-left: 40px;
+  width: calc(100% - 75px);
+}
+#full_box #left_box .review .review_txtBox .review_txt .user_review p {
+  font-size: 0.85rem;
+}
+#full_box #left_box .review .review_txtBox .review_txt .user_review > div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+#full_box #left_box .review .review_txtBox .review_txt .user_review > div button {
+  margin-left: 10px;
+  background: transparent;
+  border: 1px solid #ccc;
+  font-size: 0.75rem;
+  color: #7f8b97;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#full_box #left_box .review .review_txtBox .review_txt .user_review > div button:hover {
+  background: #eee;
+}
+#full_box #left_box .review .review_txtBox .visible_box .review_txt:nth-of-type(4) .user_review > p:first-of-type {
+  width: 100%;
+  height: 90px;
+  background: #f7f6f6;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#full_box #left_box .review .review_txtBox .visible_box .review_txt:nth-of-type(4) .user_review > p:first-of-type i:first-of-type {
+  width: 100%;
+  text-align: center;
+  color: #8594a2;
+  font-size: 0.85rem;
+}
+#full_box #left_box .review .review_txtBox .visible_box .review_txt:nth-of-type(4) .user_review > p:first-of-type small {
+  color: #646e79;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+#full_box #left_box .review .review_txtBox .visible_box .review_txt:nth-of-type(4) .user_review > p:first-of-type i:not(:first-of-type) {
+  font-size: 0.7rem;
+  color: #646e79;
+}
+#full_box #left_box .review .review_txtBox .hidden_box .review_txt:nth-of-type(9) .user_review > p:first-of-type {
+  width: 100%;
+  height: 90px;
+  background: #f7f6f6;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#full_box #left_box .review .review_txtBox .hidden_box .review_txt:nth-of-type(9) .user_review > p:first-of-type i:first-of-type {
+  width: 100%;
+  text-align: center;
+  color: #8594a2;
+  font-size: 0.85rem;
+}
+#full_box #left_box .review .review_txtBox .hidden_box .review_txt:nth-of-type(9) .user_review > p:first-of-type small {
+  color: #646e79;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+#full_box #left_box .review .review_txtBox .hidden_box .review_txt:nth-of-type(9) .user_review > p:first-of-type i:not(:first-of-type) {
+  font-size: 0.7rem;
+  color: #646e79;
+}
+#full_box #left_box .review .review_txtBox .hidden_box {
+  display: none;
+}
+#full_box #left_box .review .hide_txt {
+  width: 100%;
+  justify-content: center;
+  border: 2px solid #ddd;
+  padding: 10px 0;
+  border-radius: 3px;
+  transition: 0.2s;
+  color: #999;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+#full_box #left_box .review .hide_txt:hover {
+  background: #eee;
+}
+#full_box #left_box .review .hide_txt span {
+  color: #1e9eff;
+}
+#full_box #left_box .review .hide_txt i {
+  background: transparent;
+  color: #1e9eff;
+  font-size: 0.8rem;
+  margin-left: 0;
 }
 #full_box aside {
   width: 210px;
