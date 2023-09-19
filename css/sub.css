@@ -246,6 +246,211 @@ footer #footer_box2 > p:last-of-type {
   margin-top: 10px;
 }
 
+.preview {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: gray;
+}
+.preview .pre_book {
+  width: 50%;
+  height: 93%;
+  background: #fff;
+  display: flex;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  position: absolute;
+  top: 4%;
+  left: 25%;
+}
+.preview .pre_book .pre_left {
+  width: calc(100% - 260px);
+  height: 100%;
+  position: relative;
+}
+.preview .pre_book .pre_left .pre_title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.preview .pre_book .pre_left .pre_title > h4 {
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.preview .pre_book .pre_left .pre_title > h4 i {
+  color: #aaa;
+}
+.preview .pre_book .pre_left .pre_title > h4:hover, .preview .pre_book .pre_left .pre_title > h4:hover i {
+  color: #1e9eff;
+}
+.preview .pre_book .pre_left .pre_title table {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #777;
+  height: 30px;
+  cursor: pointer;
+  border-spacing: 0;
+}
+.preview .pre_book .pre_left .pre_title table th:first-child {
+  width: 45px;
+  font-size: 0.9rem;
+}
+.preview .pre_book .pre_left .pre_title table th:nth-child(2) {
+  font-size: 0.7rem;
+  width: 45px;
+  border-right: 1px solid #ccc;
+}
+.preview .pre_book .pre_left .pre_title table th:nth-child(2) i {
+  font-size: 0.1rem;
+  margin-left: 2px;
+}
+.preview .pre_book .pre_left .pre_title table th:nth-child(3) {
+  font-size: 0.9rem;
+  width: 45px;
+  border-right: 1px solid #ccc;
+}
+.preview .pre_book .pre_left .pre_title table .ch_size {
+  background: #eee;
+  color: #ccc;
+}
+.preview .pre_book .pre_left .pre_txt {
+  width: 80%;
+  height: 90%;
+  border: 1px solid #ceecbd;
+  position: absolute;
+  top: 7%;
+  left: 10%;
+  overflow-y: scroll;
+}
+.preview .pre_book .pre_left .pre_txt > div:first-of-type, .preview .pre_book .pre_left .pre_txt > div:nth-of-type(2) {
+  width: 550px;
+  height: 800px;
+}
+.preview .pre_book .pre_left .pre_txt > div:first-of-type > img, .preview .pre_book .pre_left .pre_txt > div:nth-of-type(2) > img {
+  width: 100%;
+  height: 100%;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(3) {
+  width: 550px;
+  height: 800px;
+  padding: 30px 0 0 30px;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(3) > div {
+  font-family: "RidiBatang";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(3) > div > img:last-of-type {
+  margin-bottom: 40px;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(3) > div > img:first-of-type {
+  margin-bottom: 10px;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(3) > div p {
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(3) > div p:first-of-type {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(3) > div p:not(:first-of-type) {
+  text-align: left;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(3) > div h5 {
+  width: 100%;
+  font-weight: 600;
+  line-height: 30px;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(3) > div h5:first-of-type {
+  margin-top: 20px;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(3) > div h5:last-of-type {
+  margin-bottom: 20px;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(4) {
+  width: 550px;
+  padding-top: 50px;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(4) .list_title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(4) .list_title > p {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.2rem;
+  font-family: "RidiBatang";
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(4) > p {
+  margin-top: 50px;
+  line-height: 30px;
+  font-size: 0.95rem;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(4) > p small {
+  padding: 30px;
+  display: inline-block;
+  width: 100%;
+  font-family: "RidiBatang";
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(4) > p small:nth-of-type(2) {
+  text-align: center;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(4) > p small:nth-of-type(3) {
+  text-align: center;
+  border: 1px solid #333;
+}
+.preview .pre_book .pre_left .pre_txt > div:nth-of-type(4) > p small:nth-of-type(4) {
+  border: 1px solid #333;
+}
+.preview .pre_book .pre_left .pre_txt::-webkit-scrollbar {
+  display: none;
+}
+.preview .pre_book .pre_right {
+  background: #eee;
+  width: 260px;
+  height: 100%;
+}
+.preview .pre_book .pre_right h4 {
+  font-weight: 500;
+  line-height: 40px;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+.preview .pre_book .pre_right h4:first-of-type {
+  font-size: 1.1rem;
+}
+.preview .pre_book .pre_right > a {
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 100%;
+  line-height: 40px;
+  display: inline-block;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+.preview .pre_book .pre_right .ch_list {
+  background: #ddd;
+}
+
 #full_box {
   width: 100%;
   height: auto;
@@ -446,22 +651,6 @@ footer #footer_box2 > p:last-of-type {
   background: rgb(27, 55, 116);
   margin-bottom: 10px;
 }
-#full_box #left_box .hide_txt {
-  cursor: pointer;
-  color: #1e9eff;
-  font-size: 0.85rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-#full_box #left_box .hide_txt i {
-  color: #fff;
-  margin-left: 3px;
-  background: #1e9eff;
-  padding: 4px 5px 3px 4px;
-  border-radius: 10px;
-  font-size: 0.1rem;
-}
 #full_box #left_box .introduce {
   width: 100%;
   margin-bottom: 60px;
@@ -509,12 +698,13 @@ footer #footer_box2 > p:last-of-type {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 #full_box #left_box .series .series_box .series_book a {
   display: inline-block;
   width: 50px;
   height: 70px;
-  border: 1px solid #e2ab46;
+  overflow: hidden;
   border-radius: 3px;
 }
 #full_box #left_box .series .series_box .series_book a > img {
@@ -679,10 +869,13 @@ footer #footer_box2 > p:last-of-type {
   height: 100%;
 }
 #full_box #left_box .profile > div:last-of-type .profile_book a {
-  border: 1px solid #ec6767;
   width: 90px;
   height: 135px;
   display: inline-block;
+}
+#full_box #left_box .profile > div:last-of-type .profile_book a > img {
+  width: 100%;
+  height: 100%;
 }
 #full_box #left_box .profile > div:last-of-type .profile_book p:first-of-type {
   font-size: 0.85rem;
@@ -738,9 +931,25 @@ footer #footer_box2 > p:last-of-type {
 #full_box #left_box .list > div .hidden_box {
   display: none;
 }
+#full_box #left_box .list .hide_txt {
+  cursor: pointer;
+  color: #1e9eff;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#full_box #left_box .list .hide_txt i {
+  color: #fff;
+  margin-left: 3px;
+  background: #1e9eff;
+  padding: 4px 5px 3px 4px;
+  border-radius: 10px;
+  font-size: 0.1rem;
+}
 #full_box #left_box .review {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 #full_box #left_box .review > h3 {
   font-size: 1.2rem;
@@ -825,7 +1034,7 @@ footer #footer_box2 > p:last-of-type {
   margin-bottom: 20px;
 }
 #full_box #left_box .review .write_review .write p i {
-  color: #eee;
+  color: #e7e9eb;
   font-size: 2.5rem;
   transition: 0.2s;
   cursor: pointer;
@@ -875,6 +1084,14 @@ footer #footer_box2 > p:last-of-type {
   display: flex;
   margin-bottom: 7px;
 }
+#full_box #left_box .review .review_category .left_cate h4 {
+  font-weight: 500;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#full_box #left_box .review .review_category .left_cate h4:hover {
+  color: #414850;
+}
 #full_box #left_box .review .review_category .left_cate h4:first-of-type {
   color: #414850;
 }
@@ -884,14 +1101,6 @@ footer #footer_box2 > p:last-of-type {
 }
 #full_box #left_box .review .review_category .left_cate h4:last-of-type small {
   color: #b3bbc2;
-}
-#full_box #left_box .review .review_category .left_cate h4 {
-  font-weight: 500;
-  transition: 0.2s;
-  cursor: pointer;
-}
-#full_box #left_box .review .review_category .left_cate h4:hover {
-  color: #414850;
 }
 #full_box #left_box .review .review_category .right_cate {
   display: flex;
@@ -938,6 +1147,9 @@ footer #footer_box2 > p:last-of-type {
   color: orangered;
   font-size: 0.1rem;
 }
+#full_box #left_box .review .review_txtBox .review_txt .star .gray {
+  color: #ddd;
+}
 #full_box #left_box .review .review_txtBox .review_txt .star p {
   margin: 0px 0 5px;
 }
@@ -953,7 +1165,7 @@ footer #footer_box2 > p:last-of-type {
   border-radius: 3px;
   font-size: 0.6rem;
 }
-#full_box #left_box .review .review_txtBox .review_txt .star p:nth-of-type(3), #full_box #left_box .review .review_txtBox .review_txt .star p:last-of-type {
+#full_box #left_box .review .review_txtBox .review_txt .star p:nth-of-type(3), #full_box #left_box .review .review_txtBox .review_txt .star p p:last-of-type {
   color: #646e79;
   font-weight: 500;
 }
@@ -989,60 +1201,39 @@ footer #footer_box2 > p:last-of-type {
 #full_box #left_box .review .review_txtBox .review_txt .user_review > div button:hover {
   background: #eee;
 }
-#full_box #left_box .review .review_txtBox .visible_box .review_txt:nth-of-type(4) .user_review > p:first-of-type {
+#full_box #left_box .review .review_txtBox .visible_box .review_txt:nth-of-type(4) .user_review > p:first-of-type, #full_box #left_box .review .review_txtBox .hidden_box .review_txt:nth-of-type(9) .user_review > p:first-of-type {
   width: 100%;
   height: 90px;
-  background: #f7f6f6;
+  cursor: pointer;
+  background: #f5f6f7;
   padding: 25px 0;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 }
-#full_box #left_box .review .review_txtBox .visible_box .review_txt:nth-of-type(4) .user_review > p:first-of-type i:first-of-type {
+#full_box #left_box .review .review_txtBox .visible_box .review_txt:nth-of-type(4) .user_review > p:first-of-type i:first-of-type, #full_box #left_box .review .review_txtBox .hidden_box .review_txt:nth-of-type(9) .user_review > p:first-of-type i:first-of-type {
   width: 100%;
   text-align: center;
   color: #8594a2;
-  font-size: 0.85rem;
-}
-#full_box #left_box .review .review_txtBox .visible_box .review_txt:nth-of-type(4) .user_review > p:first-of-type small {
-  color: #646e79;
-  font-weight: 500;
   font-size: 0.8rem;
 }
-#full_box #left_box .review .review_txtBox .visible_box .review_txt:nth-of-type(4) .user_review > p:first-of-type i:not(:first-of-type) {
-  font-size: 0.7rem;
-  color: #646e79;
-}
-#full_box #left_box .review .review_txtBox .hidden_box .review_txt:nth-of-type(9) .user_review > p:first-of-type {
-  width: 100%;
-  height: 90px;
-  background: #f7f6f6;
-  padding: 25px 0;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#full_box #left_box .review .review_txtBox .hidden_box .review_txt:nth-of-type(9) .user_review > p:first-of-type i:first-of-type {
-  width: 100%;
-  text-align: center;
-  color: #8594a2;
-  font-size: 0.85rem;
-}
-#full_box #left_box .review .review_txtBox .hidden_box .review_txt:nth-of-type(9) .user_review > p:first-of-type small {
+#full_box #left_box .review .review_txtBox .visible_box .review_txt:nth-of-type(4) .user_review > p:first-of-type small, #full_box #left_box .review .review_txtBox .hidden_box .review_txt:nth-of-type(9) .user_review > p:first-of-type small {
   color: #646e79;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
-#full_box #left_box .review .review_txtBox .hidden_box .review_txt:nth-of-type(9) .user_review > p:first-of-type i:not(:first-of-type) {
-  font-size: 0.7rem;
+#full_box #left_box .review .review_txtBox .visible_box .review_txt:nth-of-type(4) .user_review > p:first-of-type i:not(:first-of-type), #full_box #left_box .review .review_txtBox .hidden_box .review_txt:nth-of-type(9) .user_review > p:first-of-type i:not(:first-of-type) {
+  font-size: 0.1rem;
   color: #646e79;
 }
 #full_box #left_box .review .review_txtBox .hidden_box {
   display: none;
 }
-#full_box #left_box .review .hide_txt {
+#full_box #left_box .review > .hide_txt {
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
   width: 100%;
   justify-content: center;
   border: 2px solid #ddd;
@@ -1053,17 +1244,91 @@ footer #footer_box2 > p:last-of-type {
   font-size: 0.8rem;
   font-weight: 600;
 }
-#full_box #left_box .review .hide_txt:hover {
+#full_box #left_box .review > .hide_txt:hover {
   background: #eee;
 }
-#full_box #left_box .review .hide_txt span {
+#full_box #left_box .review > .hide_txt span {
   color: #1e9eff;
 }
-#full_box #left_box .review .hide_txt i {
+#full_box #left_box .review > .hide_txt i {
   background: transparent;
   color: #1e9eff;
   font-size: 0.8rem;
   margin-left: 0;
+}
+#full_box #left_box .review .DisplayCriteria {
+  width: 100%;
+}
+#full_box #left_box .review .DisplayCriteria > .hide_txt {
+  cursor: pointer;
+  border: none;
+  font-size: 0.8rem;
+  color: #333;
+  font-weight: 500;
+}
+#full_box #left_box .review .DisplayCriteria > .hide_txt i {
+  color: #333;
+  font-size: 0.1rem;
+  background: transparent;
+}
+#full_box #left_box .review .DisplayCriteria > .hide_txt:hover, #full_box #left_box .review .DisplayCriteria > .hide_txt:hover i {
+  background: transparent;
+  color: #aaa;
+}
+#full_box #left_box .review .DisplayCriteria > .hidden_box {
+  padding: 20px;
+  background: #f5f6f7;
+  display: none;
+  margin-top: 10px;
+}
+#full_box #left_box .review .DisplayCriteria > .hidden_box h5 {
+  font-weight: 500;
+}
+#full_box #left_box .review .DisplayCriteria > .hidden_box h5:not(:first-of-type) {
+  color: #8594a2;
+}
+#full_box #left_box .review .DisplayCriteria > .hidden_box h5:nth-of-type(3), #full_box #left_box .review .DisplayCriteria > .hidden_box h5:nth-of-type(5), #full_box #left_box .review .DisplayCriteria > .hidden_box h5:nth-of-type(7), #full_box #left_box .review .DisplayCriteria > .hidden_box h5:nth-of-type(9) {
+  font-weight: 100;
+}
+#full_box #left_box .purchased_together {
+  width: 100%;
+  margin-bottom: 80px;
+}
+#full_box #left_box .purchased_together > h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 40px;
+  color: rgb(27, 55, 116);
+}
+#full_box #left_box .purchased_together > div {
+  width: 100%;
+  height: 440px;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+#full_box #left_box .purchased_together > div .pur_book {
+  width: 17%;
+  height: 185px;
+  cursor: pointer;
+  text-align: center;
+}
+#full_box #left_box .purchased_together > div .pur_book a {
+  display: inline-block;
+  width: 90px;
+  height: 130px;
+}
+#full_box #left_box .purchased_together > div .pur_book a > img {
+  width: 100%;
+  height: 100%;
+}
+#full_box #left_box .purchased_together > div .pur_book h5 {
+  font-weight: 500;
+}
+#full_box #left_box .purchased_together > div .pur_book p {
+  font-size: 0.75rem;
 }
 #full_box aside {
   width: 210px;

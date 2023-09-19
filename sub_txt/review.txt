@@ -113,7 +113,7 @@
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star gray"></i>
 </p>
 <p>iov***</p>
 <p>2023.01.04.</p>
@@ -139,9 +139,9 @@
 <p>
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star gray"></i>
+<i class="fa-solid fa-star gray"></i>
+<i class="fa-solid fa-star gray"></i>
 </p>
 <p>nub***</p>
 <p>2022.11.03.</p>
@@ -166,8 +166,8 @@
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star gray"></i>
+<i class="fa-solid fa-star gray"></i>
 </p>
 <p>ima***</p>
 <p>2022.11.02.</p>
@@ -329,8 +329,8 @@
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star gray"></i>
+<i class="fa-solid fa-star gray"></i>
 </p>
 <p>rla***</p>
 <p>2022.08.31.</p>
@@ -382,7 +382,7 @@
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star gray"></i>
 </p>
 <p>bye***</p>
 <p>2022.08.16.</p>
@@ -459,8 +459,8 @@
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star gray"></i>
+<i class="fa-solid fa-star gray"></i>
 </p>
 <p>rla***</p>
 <p>2022.08.02.</p>
