@@ -94,7 +94,7 @@
     
 <div class="user_review">
 <p><i class="fa-solid fa-triangle-exclamation"> 스포일러가 있는 리뷰입니다.</i> 
-<small>리뷰 보기 </small> &nbsp;<i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i>
+<small>리뷰 보기 </small> &nbsp;<i class="fa-solid fa-angles-right"></i>
 </p>
 <div>
 <button><i class="fa-solid fa-comment"></i> 댓글</button>
@@ -496,7 +496,7 @@
                                         
 <div class="user_review">
 <p><i class="fa-solid fa-triangle-exclamation"> 스포일러가 있는 리뷰입니다.</i> 
-<small>리뷰 보기 </small> &nbsp;<i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i>
+<small>리뷰 보기 </small> &nbsp;<i class="fa-solid fa-angles-right"></i>
 </p>
 <div>
 <button><i class="fa-solid fa-comment"></i> 댓글</button>

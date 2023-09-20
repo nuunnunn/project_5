@@ -20,30 +20,49 @@ $(function () {
         $('.review_txtBox').html(data)
     });
 
+    $.get("./sub_txt/preview.txt",function(data){
+        $('#prologue').children('p').html(data)
+    });
+
 
 
     //텍스트 펼치기
-    for(let i = 0; i < $('.hide_txt').length-2; i++){
-        $('.hide_txt').eq(i).click(function(){
-            $('.hidden_box').eq(i).slideToggle();
-            $(this).html(`<p class="hide_txt">접기 <i class="fa-solid fa-angle-up"></i></p>`);
-            $('.hide_txt').click(function(){
-                $(this).html(`<p class="hide_txt">펼쳐보기 <i class="fa-solid fa-angle-down"></i></p>`);
-            })
-        })
-    }
+    $('.hide_txt').click(function () {        
 
-    $('.hide_txt').eq(2).click(function(){
-        $('.hidden_box').eq(2).slideDown();
+        if ($(this).parent().hasClass('list') || $(this).parent().hasClass('book_review')) {
+            $(this).prev().find('.hidden_box').slideToggle();
+            
+            if ($(this).children('span').text() == '펼쳐보기') {
+                $(this).children('span').text('접기');
+                $(this).children('i').removeClass('fa-angle-down').addClass('fa-angle-up');
+                
+            } else {
+                $(this).children('span').text('펼쳐보기');
+                $(this).children('i').removeClass('fa-angle-up').addClass('fa-angle-down');
+            }
+        }else if($(this).children('span').text()=='10'){
+            $(this).prev().find('.hidden_box').slideDown();
+
+        }
+        else if($(this).children('span').text()=='구매자 표시 기준은 무엇인가요?'){
+            $(this).siblings('.hidden_box').slideToggle();
+
+            if($(this).children('i').hasClass('fa-angle-down')){
+                $(this).children('i').removeClass('fa-angle-down').addClass('fa-angle-up');
+            }else {
+                $(this).children('i').removeClass('fa-angle-up').addClass('fa-angle-down');
+            }
+        }
     });
 
-    $('.DisplayCriteria').children($('.hide_txt')).click(function(){
-        $('.hidden_box').eq(3).slideToggle();
-        $(this).html(`<p class="hide_txt">구매자 표시 기준은 무엇인가요? <i class="fa-solid fa-angle-up"></i></p>`);
-        $('.hide_txt').click(function(){
-            $(this).html(`<p class="hide_txt">구매자 표시 기준은 무엇인가요? <i class="fa-solid fa-angle-down"></i></p>`);
-        })
-    })
+
+    
+    $('.go_popup').click(function(){
+        $('.preview').fadeIn();
+    });
+    $('.go_page').click(function(){
+        $('.preview').fadeOut();
+    });
 });       
 
 
@@ -76,4 +95,23 @@ $('.pre_title th').click(function(){
         p.css('font-size', size + 'rem');
         $(this).addClass('ch_size').siblings().removeClass('ch_size');
     }
+});
+
+
+function do_scroll(){
+    $('.scroll').fadeOut();
+}
+setTimeout(do_scroll,5000);
+
+
+
+
+$('.red').hover(function(){
+    let idx = $(this).index();
+    $(this).css('color','orangered');
+    $(this).prevAll().css('color','orangered');
+
+},function(){
+    $(this).css('color','#e7e9eb');
+    $(this).prevAll().css('color','#e7e9eb');
 });
