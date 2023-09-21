@@ -11,6 +11,7 @@ function animate(box, slide, count, end){
         tr = end - tr;  
     }
     
+    //슬라이드 animate 이벤트 변수로 넣음
     const bSlide_effet = { transform: `translate(-${tr}px,0)` };
     const bSlide_time = { duration: 1000, iterations: 1, fill: 'forwards'};
     slide.animate(bSlide_effet, bSlide_time);
@@ -24,8 +25,10 @@ const td_prev = document.getElementsByClassName('td_prev')[0];
 const today_slide = document.getElementsByClassName('today_slide')[0];
 
 td_next.addEventListener('click', function () {
+    //다음 버튼 눌러야 이전버튼 나옴
     td_prev.style.display = 'block';
 
+    //다음 버튼 누르면 카운트 증가
     td_count++;
     //next 버튼 사라짐
     if(td_count > 5){
@@ -35,10 +38,12 @@ td_next.addEventListener('click', function () {
         })
     }
 
+    //animate 함수에서 매개변수로 실행함
     animate($('.td_box'), today_slide, td_count, 1178);
 });
 
 td_prev.addEventListener('click', function () {
+    //다음 버튼 누르면 카운트 감소
     td_count--;
     //prev 버튼 사라짐
     if(td_count < 1){
@@ -105,8 +110,6 @@ s5_next.addEventListener('click', function () {
     s5_slide.forEach((slide)=>{
         animate($('.s5_box'), slide, s5_count, 1198);
     })
-
-    // animate($('.s5_box'), s5_slide, s5_count, 1198);
 });
 
 s5_prev.addEventListener('click', function () {
@@ -121,8 +124,6 @@ s5_prev.addEventListener('click', function () {
     s5_slide.forEach((slide)=>{
         animate($('.s5_box'), slide, s5_count, 1198);
     })
-
-    // animate($('.s5_box'), s5_slide, s5_count, 1198);
 });
 
 

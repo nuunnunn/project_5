@@ -15,19 +15,6 @@ for (var j = 0; j < search.length; j++) {
             $('.td_box').eq(j).find('a').append('<img src = "' + data.documents[0].thumbnail + '"/>');
             $('.td_box').eq(j).children('h4').text(data.documents[0].title);
             $('.td_box').eq(j).children('p').text(data.documents[0].authors);
-
-            // var boxs = document.getElementsByClassName('box' + j);
-            // for (var i = 0; i < boxs.length; i++) {
-
-                // $('.art_box > a').append('<img src = "' + data.documents[0].thumbnail + '"/>');
-            //     $('.box' + j).eq(i).append('<h3>' + data.documents[i].title + '</h3>');
-            //     $('.box' + j).eq(i).append('<h6>' + data.documents[i].authors + '</h6>');
-
-            //     var str = data.documents[i].contents;
-            //     var str2 = str.substring(0, 60);
-            //     $('.box' + j).eq(i).append('<p>' + str2 + '</p>');
-            //     $('.box' + j).eq(i).append('<button>' + 'click' + '</button>')
-            // }
         });
 }
 

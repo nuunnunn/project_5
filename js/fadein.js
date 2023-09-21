@@ -13,6 +13,7 @@ const foreign_wrap = document.getElementsByClassName('foreign_wrap')[0];
 const eBook_wrap = document.getElementsByClassName('eBook_wrap')[0];
 const fade_wrap = document.querySelectorAll('.fade_wrap');
 
+//현재 항목 표시
 if($('.best').css('color','rgb(204, 204, 204)')){
     $('.all').click(function(){
         $(this).css('color','#ccc').siblings().css('color','#111')
@@ -44,8 +45,10 @@ if($('.best').css('color','rgb(204, 204, 204)')){
 
 
 
+//베스트가 기본 실행
 function basic() {
 
+    //나타남
     best_box.style.height = '425px';
     best_box.style.opacity = 1;
     all_wrap.style.height = '425px';
@@ -53,6 +56,7 @@ function basic() {
     best_button.style.color = '#ccc';
     all.style.color = '#ccc';
 
+    //사라짐
     new_box.style.height = '0%';
     new_box.style.opacity = 0;
     new_all.style.height = '0px';
@@ -61,12 +65,14 @@ function basic() {
 
 
     all.onclick = function () {
+        //모든 섹션 사라짐
         fade_wrap.forEach((fade) => {
             console.log(fade)
             fade.style.opacity = 0;
             fade.style.height = 0;       
         });
 
+        //해당 섹션만 나옴
         all_wrap.style.opacity = 1;
         all_wrap.style.height = '425px';
     }
@@ -121,13 +127,16 @@ function basic() {
 }
 
 $(function () {
+    //첫 로드 시 실행
     basic();
 });
 
 function best_fade() {
 
     best_button.onclick = function () {
+        //베스트 누르면 실행됨
         basic();
+        //새로나온 작품 누르면 실행됨
         new_fade();
     }
 }
@@ -142,6 +151,7 @@ const new_kr = document.getElementsByClassName('new_kr')[0];
 const new_foreign = document.getElementsByClassName('new_foreign')[0];
 const new_eBook = document.getElementsByClassName('new_eBook')[0];
 
+//새로나온 작품 누르면 실행
 function new_fade() {
     new_button.onclick = function () {
 

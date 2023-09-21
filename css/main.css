@@ -108,6 +108,7 @@ header nav a:hover {
 }
 #menu .iconbox input:focus {
   outline: none;
+  padding-left: 30px;
 }
 #menu .iconbox .icon_img {
   width: 180px;
