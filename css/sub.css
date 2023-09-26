@@ -546,6 +546,7 @@ footer #footer_box2 > p:last-of-type {
   width: 30px;
   height: 100%;
   position: absolute;
+  background-position: in;
   background-image: url(../img/sub/bookCover_side.jfif);
   background-size: cover;
   background-position: center;
@@ -1456,6 +1457,9 @@ footer #footer_box2 > p:last-of-type {
   height: 185px;
   cursor: pointer;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #full_box #left_box .purchased_together > div .pur_book a {
   display: inline-block;
@@ -1468,9 +1472,11 @@ footer #footer_box2 > p:last-of-type {
 }
 #full_box #left_box .purchased_together > div .pur_book h5 {
   font-weight: 500;
+  width: 101px;
 }
 #full_box #left_box .purchased_together > div .pur_book p {
   font-size: 0.75rem;
+  width: 100%;
 }
 #full_box aside {
   width: 210px;
