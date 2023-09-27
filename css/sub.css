@@ -1478,6 +1478,26 @@ footer #footer_box2 > p:last-of-type {
   font-size: 0.75rem;
   width: 100%;
 }
+#full_box #left_box .purchased_together > div .pur_8 h5 {
+  width: 90px;
+  margin-top: 5px;
+}
+#full_box #left_box .purchased_together > div .pur_9 h5 {
+  width: 120px;
+  margin-top: 5px;
+}
+#full_box #left_box .purchased_together > div .pur_11 h5 {
+  width: 105px;
+  margin-top: 5px;
+}
+#full_box #left_box .purchased_together > div .pur_14 h5 {
+  width: 125px;
+  margin-top: 5px;
+}
+#full_box #left_box .purchased_together > div .pur_15 h5 {
+  width: 110px;
+  margin-top: 5px;
+}
 #full_box aside {
   width: 210px;
 }
