@@ -180,7 +180,7 @@ footer #footer_box table td .hire::after {
   content: "N";
   background: #1e9eff;
   color: #fff;
-  font-size: 0.1rem;
+  font-size: 0.6rem;
   padding: 1px 6px 2px 5px;
   border-radius: 20px;
   margin-left: 2px;
@@ -841,7 +841,7 @@ footer #footer_box2 > p:last-of-type {
   background: #1e9eff;
   padding: 4px 5px 3px 4px;
   border-radius: 10px;
-  font-size: 0.1rem;
+  font-size: 0.5rem;
 }
 #full_box #left_box .book_review .visible_box {
   display: block;
@@ -1040,7 +1040,7 @@ footer #footer_box2 > p:last-of-type {
   background: #1e9eff;
   padding: 4px 5px 3px 4px;
   border-radius: 10px;
-  font-size: 0.1rem;
+  font-size: 0.5rem;
 }
 #full_box #left_box .review {
   width: 100%;
